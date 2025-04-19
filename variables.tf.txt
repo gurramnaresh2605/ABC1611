@@ -1,0 +1,71 @@
+variable "subscription_id" {
+  description = "The Azure subscription ID."
+  type        = string
+}
+
+variable "client_id" {
+  description = "The Azure client ID (Application ID)."
+  type        = string
+}
+
+variable "client_secret" {
+  description = "The Azure client secret (Application Secret)."
+  type        = string
+  sensitive   = true
+}
+
+variable "tenant_id" {
+  description = "The Azure tenant ID."
+  type        = string
+}
+
+variable "location" {
+  description = "The Azure region where resources will be created."
+  type        = string
+}
+
+variable "vnet1_address_space" {
+  description = "The address space for Virtual Network 1."
+  default     = "10.0.0.0/16"
+}
+
+variable "vnet3_address_space" {
+  description = "The address space for Virtual Network 2."
+  default     = "10.15.0.0/16" # Updated as per your changes
+}
+
+variable "subnet1_address_prefix" {
+  description = "The address prefix for Subnet 1."
+  default     = "10.0.1.0/24"
+}
+
+variable "subnet2_address_prefix" {
+  description = "The address prefix for Subnet 2."
+  default     = "10.15.1.0/24"
+}
+
+variable "vm_username" {
+  description = "The username for the VM admin account."
+  type        = string
+}
+
+variable "vm_password" {
+  description = "The password for the VM admin account."
+  type        = string
+  sensitive   = true
+}
+
+variable "vm1_private_ip" {
+  description = "Static private IP address for VM1."
+  type        = string
+}
+
+variable "vm2_private_ip" {
+  description = "Static private IP address for VM2."
+  type        = string
+}
+
+variable "vm1_public_ip" {
+  description = "Static public IP address for VM1 (optional)."
+  type        = string
+  default     = null

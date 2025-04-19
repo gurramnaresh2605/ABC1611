@@ -1,0 +1,22 @@
+subscription_id = "78e2b57c-478d-43c9-a675-27c31d03dc80"
+client_id       = "7774880c-c12a-42f0-8102-62d50f98ab31"
+client_secret   = "B628Q~rp-BtB_1p6YOFdt_OmyTrQ~kQvszzm6avN"
+tenant_id       = "c161795f-c63d-4091-ba72-ff79b05b49ef"
+
+location        = "westus"
+
+# VNet and Subnet address space corrections
+vnet1_address_space    = "10.5.0.0/16"
+vnet3_address_space    = "10.15.0.0/16"    
+
+subnet1_address_prefix = "10.5.1.0/24"     
+subnet2_address_prefix = "10.15.1.0/24"   
+
+internal_cidr          = "10.0.0.0/8"      
+
+vm1_public_ip   = ""              
+vm1_private_ip  = "10.0.1.5"               
+vm2_private_ip  = "10.15.1.5"              
+
+vm_username     = "azureuser"
+vm_password     = "azureuser@123"
