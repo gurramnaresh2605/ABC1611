@@ -1,0 +1,11 @@
+Commands used:
+Created ABC1611 repository using below command :   gh repo create ABC1611 --public --source=. --remote=origin
+Created a Directory, under the directory created main.tf , terraform.tfvars, variables.tf files.
+Next i used below commands to run the terraform scripts, which creates the resources in the Azure Infra.
+terraform validate --> to validate the syntax of the script
+terraform init  --> to intialize the Azure provider, It initializes your working directory so Terraform is ready to use,Initializes the Backend,Installs Provider Plugins,Prepares Modules if used
+terraform plan  --> Prepares the blue print of the defined infrastructure in the main.tf
+terraform apply -uto-approve   --> Creates the resources mentioned in the main.tf and also compares the existing resources in the statefile before creating. It creates neew resources only if not present.
+
+Next pushed these scripts to ABC1611 repository.
+Next created another set of terraform scripts to demonstrate the using module from github source. For this crreated another repository.
